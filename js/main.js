@@ -300,12 +300,12 @@ define([
 
 		_initGeocoderDijit:function (srcRef) {
 			var geocoder = new Geocoder({
-				map:this.map,
-				autoComplete:true,
-				showResults:true,
-				searchDelay:250,
-				arcgisGeocoder:{
-					placeholder:"Find a place"
+				map: this.map,
+				autoComplete: true,
+				showResults: true,
+				searchDelay: 250,
+				arcgisGeocoder: {
+					placeholder: "Search"
 				}
 			}, srcRef);
 			geocoder.startup();
