@@ -104,7 +104,7 @@ define({
 	 *
 	 **************************************************************************/
 	/* Step 1 */
-	"STEP_ONE_MESSAGE": "<span style='font-weight: bold'>Go</span> to the location you want to explore, then <br/><span style='font-weight: bold'>Click</span> on a place to see its historical maps.",
+	"STEP_ONE_MESSAGE": "<span style='font-weight: bold'>Click</span> on the map to see available historical images at that location.",
 	"STEP_ONE_HALF_CIRCLE_MSG": "1",
 	/* Step 2 */
 	"STEP_TWO_MESSAGE": "<span style='font-weight: bold'>Click</span> timeline maps to view in main window.",
@@ -141,7 +141,7 @@ define({
 	 * Geocoder Dijit
 	 *
 	 **************************************************************************/
-	"GEOCODER_PLACEHOLDER_TEXT": "Find a Place",
+	"GEOCODER_PLACEHOLDER_TEXT": "Search",
 
 	/**************************************************************************
 	 *
@@ -200,7 +200,7 @@ define({
 			"value": 12000,
 			"color": "rgb(0, 235, 137)",
 			"className": "one",
-			"lodThreshold": 13
+			"lodThreshold": 12
 		}
 	],
 
@@ -224,7 +224,7 @@ define({
 	"TIMELINE_CLUSTER": false, //heather - may be useful in future
 	/* Enable a navigation menu with buttons to move and zoom the timeline. */
 	"TIMELINE_SHOW_NAVIGATION": true, 
-	/* minimum date onLoad */
+	/* minimum date onLoad */ // change these to  include min and max dates of the maps/images
 	"TIMELINE_MIN_DATE": '1960',
 	/* maximum date onLoad */
 	"TIMELINE_MAX_DATE": '2020',
@@ -294,7 +294,8 @@ define({
 	"MSG_NO_MAPS": "No maps overlap the selected point",
 
 	"ZOOM_LEVEL_THRESHOLD": 9,
-	"THUMBNAIL_VISIBLE_THRESHOLD": 12,
+	//"THUMBNAIL_VISIBLE_THRESHOLD": 12,
+	"THUMBNAIL_VISIBLE_THRESHOLD": 9,  //seems to have no effect - heather
 	"THUMBNAIL_VISIBLE_THRESHOLD_MSG": "Zoom in to view map",
 
 	/**************************************************************************
