@@ -105,9 +105,10 @@ define([
 				var row = evt.grid.row(node),
 						lodThreshold = row.data.lodThreshold,
 						maskId = "grid-row-" + row.data.objID + "-mask";
-				if (this._main.currentLOD <= lodThreshold) {
+				//console.log("threshold within gridrefresh: " + lodThreshold);
+				/*if (this._main.currentLOD <= lodThreshold) {
 					this._main.userInterfaceUtils.addThumbnailMask(maskId, row.element);
-				}
+				}*/ //heather - removed so no mask appears - thumbnail always visible TODO: on reorder, everything gets masked??
 			}));
 		},
 
