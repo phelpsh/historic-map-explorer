@@ -57,6 +57,8 @@ define([
 		mapExtentChangeHandler: function (evt) {
 			this.currentMapExtent = evt.extent;
 			this.currentLOD = evt.lod.level;
+			//console.log("extent: " + this.currentMapExtent); //returns object object
+			console.log("lod: " + this.currentLOD);	
 			query(".dgrid-row").forEach(lang.hitch(this, function (node) {
 				var row = this.gridUtils.grid.row(node),
 					lodThreshold = row.data.lodThreshold,
