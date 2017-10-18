@@ -13,6 +13,7 @@
  | See the License for the specific language governing permissions and
  | limitations under the License.
  */
+ //making a change to test github desktop
 define([
 	"dijit/registry",
 	"dojo/_base/array",
